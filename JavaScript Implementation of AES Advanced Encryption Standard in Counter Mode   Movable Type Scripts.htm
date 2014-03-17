@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" class="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<script src="./JavaScript Implementation of AES Advanced Encryption Standard in Counter Mode   Movable Type Scripts_files/aes.js">/* AES JavaScript implementation */</script>
+
+
+
+
+</head>
+
+<body>
+
+  <form name="f">
+  <fieldset><legend>Functional demo</legend>
+  <ul>
+    <li>
+      <label for="pw">Password</label>
+      <input type="text" name="pw" id="pw" value="L0ck it up saf3" class="w12">
+    </li>
+    <li>
+      <label for="pt">Plaintext</label>
+      <textarea name="pt" id="pt" class="w36">pssst ... đon’t tell anyøne!</textarea>
+    </li>
+    <li><label><button type="button" name="encrypt" id="encrypt" onclick="f.cipher.value = Aes.Ctr.encrypt(f.pt.value, f.pw.value)">Encrypt it</button>
+      </label>
+      <textarea name="cipher" id="cipher" readonly="" class="w36"></textarea>
+    </li>
+    <li><label><button type="button" name="decrypt" id="decrypt" onclick="f.plain.value = Aes.Ctr.decrypt(f.cipher.value, f.pw.value)">Decrypt it</button>
+      </label>
+      <textarea name="plain" id="plain" readonly="" class="w36"></textarea>
+    </li>
+  </ul>
+  </fieldset>
+  </form>
+  
+ </body></html>
